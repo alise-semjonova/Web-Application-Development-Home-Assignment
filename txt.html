@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UsabLy</title>
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">
+	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="http://code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+	<link rel="stylesheet" href="http://jqueryui.com/resources/demos/style.css">
+	<script>
+	<script>
+	$(function() {
+		$( "#slider-range" ).slider({
+			range: true,
+			min: 0,
+			max: 500,
+			values: [ 75, 300 ],
+			slide: function( event, ui ) {
+				$( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+			}
+		});
+		$( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+			" - $" + $( "#slider-range" ).slider( "values", 1 ) );
+	});
+	</script>
+</head>
+
+<body>
+<div>
+	  <h1>UsabLy</h1>
+
+	  <p>My Collections > Math > Math Mammoth > Editing </p>
+	<form action="demo_form.asp">
+  <input type="text" name="fname">
+  <input type="submit" value="Save">
+</form>
+	  <p>Description:
+	  <textarea id="u51_input"></textarea></p>
+	  <p>Subject: <select id="u52_input" style="-webkit-appearance: menulist-button; border-color: rgb(153, 153, 153);">
+          <optgroup label="" value="Choose subject">Choose subject</option>
+          <optgroup label="Language and literature">Language and literature</option>
+          <option value="- Estonian language">Estonian language</option>
+          <option value="- Literature (the Estonian school)">Literature (the Estonian school)</option>
+          <option value="- Russian language">Russian language</option>
+          <option value="- Literature (in Russian school)">Literature (in Russian school)</option>
+          <optgroup label="Foreign languages">Foreign languages</option>
+          <option value="- Foreign language A">Foreign language A</option>
+          <option value="- Foreign language B and Estonian as a foreign language">Foreign language B and Estonian as a foreign language</option>
+          <optgroup label="Mathemathics">Mathemathics</option>
+          <option value="- Mathemathics">Mathemathics</option>
+          <optgroup label="Natural sciences">Natural sciences</option>
+          <option value="- Natural science">Natural science</option>
+          <option value="- Biology">Biology</option>
+          <option value="- Geography">Geography</option>
+          <option value="- Physics">Physics</option>
+          <option value="- Chemistry">Chemistry</option>
+          <optgroup label="Social sciences">Social sciences</option>
+          <option value="- Human studies">Human studies</option>
+          <option value="- History">History</option>
+          <option value="- Society studies">Society studies</option>
+          <ooptgroup label="Arts">Arts</option>
+          <option value="- Music">Music</option>
+          <option value="- Art">Art</option>
+          <optgroup label="Technology">Technology</option>
+          <option value="- Manual training">Manual training</option>
+          <option value="- Crafts and home economics">Crafts and home economics</option>
+          <option value="- Technology studies">Technology studies</option>
+          <optgroup label="Physical training">Physical training</option>
+          <option value="- Physical training">Physical training</option>
+        </select></p>
+	  <p>Topic: <input type="text" name="fname"></p>
+	  <p>Age group:</p>
+	  <p>
+	<label for="amount">Price range:</label>
+	<input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+</p>
+	  <p>Tags: <input type="text" name="fname"></p>
+	  <p>Level of engagement: <select id="u96_input" style="-webkit-appearance: menulist-button; border-color: rgb(153, 153, 153);">
+          <option value="Consumption">Consumption</option>
+          <option value="Reaction">Reaction</option>
+          <option value="Interaction">Interaction</option>
+          <option value="Expansion">Expansion</option>
+          <option value="Remixing">Remixing</option>
+        </select></p>
+</div>
+
+	  <h2>Chapter 1</h2>
+
+
+
+	</body>
+</html>
